@@ -1,0 +1,48 @@
+package pims.model;
+
+public class Supplier {
+    private final int supplierId;
+    private final String name;
+    private final String contactPerson;
+    private final String phone;
+    private final String email;
+    private final String address;
+
+    public Supplier(int supplierId, String name, String contactPerson, String phone, String email, String address) {
+        this.supplierId = supplierId;
+        this.name = name;
+        this.contactPerson = contactPerson;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+    }
+
+    public int getSupplierId() {
+        return supplierId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getContactPerson() {
+        return contactPerson;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public String toString() {
+        return supplierId + " - " + name;
+    }
+}
